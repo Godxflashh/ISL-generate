@@ -1,26 +1,88 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
+    background-color: #bcbcd4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
 
-video {
-    border: 2px solid #ccc;
-    margin: 10px;
+h1 {
+    color: #333;
+    margin-bottom: 20px;
 }
 
-#localVideo {
-    width: 160px;
-    height: 120px;
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #remoteVideo {
-    width: 640px;
-    height: 480px;
+    width: 70%; /* Adjust width to make it smaller */
+    height: 60vh; /* Reduce height to 60% of the viewport */
+    object-fit: cover;
+    border-radius: 15px; /* Add rounded corners */
+    border: 2px solid black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-button {
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
+#localVideo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 150px; /* Smaller size */
+    height: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+video {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 45%;
+    height: auto;
+    background-color: black;
+}
+
+.controls button {
+    position: relative;
+    background-color: #f3f4f6;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    color: #555;
     cursor: pointer;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #798f94;
+    color: #111;
+}
+
+.controls button:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }

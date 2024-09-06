@@ -1,8 +1,11 @@
-const socket = io();
+const socket = io('https://trivially-included-moth.ngrok-free.app'); 
 
 const localVideo = document.getElementById('localVideo');
 const remoteVideo = document.getElementById('remoteVideo');
 const startWebcamButton = document.getElementById('startWebcam');
+const stopWebcamButton = document.getElementById('stopWebcam');
+const micOnButton = document.getElementById('micOn');
+const micOffButton = document.getElementById('micOff');
 const callButton = document.getElementById('callButton');
 
 let localStream;
@@ -23,6 +26,29 @@ startWebcamButton.addEventListener('click', async () => {
         callButton.disabled = false;
     } catch (error) {
         console.error('Error accessing media devices.', error);
+    }
+});
+
+// Stop Webcam
+stopWebcamButton.addEventListener('click', () => {
+    if (localStream) {
+        localStream.getTracks().forEach(track => track.stop());
+        localStream = null;
+    }
+    callButton.disabled = true;
+});
+
+// Mic On
+micOnButton.addEventListener('click', () => {
+    if (localStream) {
+        localStream.getAudioTracks()[0].enabled = true;
+    }
+});
+
+// Mic Off
+micOffButton.addEventListener('click', () => {
+    if (localStream) {
+        localStream.getAudioTracks()[0].enabled = false;
     }
 });
 
