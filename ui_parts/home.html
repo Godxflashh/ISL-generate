@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Translator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+        <a href="#" class="header-button"><b>Ishaare</b></a>
+        <div class="header-icons">
+            <a href="http://indiandeaf.org/ISL" class="header-icon" title="Dictionary" target="_blank">
+                <i class="fas fa-book"></i>
+            </a>
+            <a href="https://www.example.com" class="header-icon" title="Homepage"><i class="fas fa-home"></i></a>
+            <a href="https://www.instagram.com" class="header-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" class="header-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com" class="header-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="language-dropdown">
+            <select name="languages" id="language-select">
+                <option value="en">English</option>
+                <option value="bn">Bengali</option>
+                <option value="hi">Hindi</option>
+                <option value="gu">punjabi</option>
+            </select>
+        </div>
+
+    </header>
+    <div class="journal">
+        <div class="camera-container">
+            <div class="camera-box" id="cameraBox">
+                <p>Loading camera...</p>
+            </div>
+        </div>
+        <div class="output-container">
+            <div class="output-box" id="outputBox">
+                Translation will appear here.
+            </div>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

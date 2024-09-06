@@ -1,0 +1,221 @@
+body {
+    font-family: 'Patrick Hand', sans-serif;
+    background-color: #efeded;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #c4c9ff;
+    /*background-image: url("Untitled\ design.jpg");
+    background-size: cover;
+    background: #466368;
+    background: linear-gradient(to right bottom, #b8bdf4, #214768);*/
+    background-color: #fdfbff;
+    background-color: #ffffff;
+    background-image: url("white-paper-texture.jpg");
+    /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23231807' fill-opacity='0.32'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");*/
+    cursor: pointer;
+    padding-top: 60px;
+}
+
+/* Transparent Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #212121; /* No background color */
+    border: none; /* No border */
+    z-index: 1000; /* Keep the header on top */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(38, 35, 35, 0.5);
+}
+
+.header-button {
+    font-family: 'Cedarville Cursive', cursive; /* Doodle-like font */
+    font-size: 40px;
+    background-color: transparent; /* No background color */
+    border: none; /* No border */
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration:none;
+    outline: none;
+}
+
+.header-button:hover {
+    color: #555; /* Darken color on hover */
+    transform: scale(1.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+.heading {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 20px; /* Space between the heading and the content */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.journal {
+    border: 2px solid #bbb;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(38, 35, 35, 0.5);
+    padding: 20px;
+    width: 900px;
+    max-width: 630px;
+    height: 400px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.camera-container,
+.output-container {
+    margin-bottom: 20px;
+    color: #eee;
+}
+
+@keyframes playful-border {
+    0% {
+        border-color: #000000;
+    }
+    25% {
+        border-color: #000000;
+    }
+    50% {
+        border-color: #000000;
+    }
+    75% {
+        border-color: #000000;
+    }
+    100% {
+        border-color: #000000;
+    }
+}
+
+.camera-box {
+    border:inset #000000; /* Playful dashed border */
+    background-color: #eee;
+    width: 100%;
+    max-width: 500px; /* Smaller video box */
+    height: 225px; /* Aspect ratio of 16:9 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 auto; /* Center the video box */
+    position: relative;
+    overflow: hidden; /* Ensures the video stays within the box */
+    animation: playful-border 4s infinite; /* Animate border colors */
+    border-radius: 15px; /* Rounded corners for a softer look */
+}
+
+.camera-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire box */
+    border-radius: 10px; /* Match border rounding inside the box */
+}
+
+.output-box {
+    border: 2px solid #999;
+    /*background-color: rgba(231, 219, 180, 0.9); /* Transparently white background */
+    background-color: #2c2a2a;
+    padding: 15px;
+    min-height: 100px;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    max-width: 600px; /* Width limit for text box */
+    margin: 0 auto; /* Center the text box */
+    overflow: hidden; /* Ensure text stays within the box */
+    white-space: nowrap; /* Ensure text doesn't wrap */
+    border-right: 2px solid rgba(0,0,0,.75); /* Typewriter cursor effect */
+    animation: blinkCursor 0.75s step-end infinite alternate; /* Blinking cursor */
+}
+
+.output-box.typing {
+    animation: typewriter 4s steps(40) 1s 1 normal both, blinkCursor 0.75s step-end infinite;
+}
+
+.output-box::before {
+    content: "Translation:";
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Header Icons */
+.header-icons {
+    margin-left:1000px; /* Push icons to the right */
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header-icon:hover {
+    color: #ffffff; /* Change color on hover */
+}
+
+.header-icon i {
+    pointer-events: none; /* Disable pointer events for the icon itself */
+}
+
+/* Language Dropdown */
+.language-dropdown {
+    margin-left: 20px; 
+}
+
+#language-select {
+    appearance: none;
+    background-color:#f7f4e8;
+    border: 1px solid #fcfcfc;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+}
+
+#language-select:hover {
+    background-color: #eee;
+    border-color: #888;
+    transform: scale(1.05); /* Slight scaling effect */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.header-button:hover {
+    background-color: #eee;
+    border-color: #888;
+    transform: scale(1.05); /* Slight scaling effect */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blinkCursor {
+    from { border-right-color: rgba(0,0,0,.75); }
+    to { border-right-color: transparent; }
+}
+
