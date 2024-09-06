@@ -1,0 +1,135 @@
+/* General layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f3f4;
+}
+
+.meet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Video container for local and remote streams */
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+video {
+    width: 45%;
+    height: auto;
+    background-color: black;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Control buttons */
+.controls {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Make buttons circular */
+.control-button {
+    background-color: #ffffff;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    transition: background-color 0.2s ease;
+}
+
+.control-button i {
+    color: #5f6368;
+}
+
+/* Hover effects */
+.control-button:hover {
+    background-color: #e8f0fe;
+}
+
+.control-button:active {
+    background-color: #d2e3fc;
+}
+
+/* Different colors for mic and camera states */
+.mic-on i {
+    color: #34a853; /* Green for mic on */
+}
+
+.mic-off i {
+    color: #ea4335; /* Red for mic off */
+}
+
+.camera-on i {
+    color: #34a853; /* Green for camera on */
+}
+
+.camera-off i {
+    color: #ea4335; /* Red for camera off */
+}
+
+/* Translation box */
+.translations {
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+    background-color: #f1f3f4;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.translations h3 {
+    margin-bottom: 10px;
+    color: #202124;
+}
+
+.translations p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.translations strong {
+    color: #1a73e8;
+}
+
+.translations span {
+    font-weight: bold;
+    color: #3c4043;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    video {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

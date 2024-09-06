@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Conferencing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="vc.css"> <!-- Link to your CSS file -->
+</head>   
+
+<body>
+    <header>
+        <a href="#" class="header-button"><b>Ishaare</b></a>
+    </header>
+
+
+
+    
+<div class="meet-container">
+    <div class="video-container">
+        <!-- Video elements for local and remote streams -->
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+
+    <!-- Control buttons for mic and camera -->
+    <div class="controls">
+        <button id="toggleMic" class="control-button mic-on">
+            <i class="fas fa-microphone"></i> <!-- Mic On Icon -->
+        </button>
+        <button id="toggleCamera" class="control-button camera-on">
+            <i class="fas fa-video"></i> <!-- Camera On Icon -->
+        </button>
+    </div>
+    <!-- Translation output -->
+    <div class="translations">
+        <h3>Translations:</h3>
+        <p><strong>Original:</strong> <span id="originalText"></span></p>
+        <p><strong>Translated:</strong> <span id="translatedText"></span></p>
+    </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
