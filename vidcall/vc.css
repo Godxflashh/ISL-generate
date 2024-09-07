@@ -1,0 +1,159 @@
+/* Transparent Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #212121;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(38, 35, 35, 0.5);
+}
+
+.header-button {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 40px;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    outline: none;
+}
+
+/* General layout */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+}
+
+.meet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #1E1E1E;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+}
+
+/* Video container for local and remote streams */
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+video {
+    width: 45%;
+    height: auto;
+    background-color: #2C2C2C;
+    border-radius: 12px;
+    border: 2px solid #333;
+}
+
+/* Control buttons */
+.controls {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.control-button {
+    background-color: #333;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    transition: background-color 0.2s ease;
+    color: #ffffff;
+}
+
+/* Hover effects */
+.control-button:hover {
+    background-color: #444;
+}
+
+.control-button:active {
+    background-color: #555;
+}
+
+/* Mic and camera button states */
+.mic-on i, .camera-on i {
+    color: #34a853;
+}
+
+.mic-off i, .camera-off i {
+    color: #ea4335;
+}
+
+/* Call button start state */
+.call-start i {
+    color: #34a853;
+    background-color: #444;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/* Call button end state */
+.call-end i {
+    color: #ea4335;
+    background-color: #444;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/* Translation box */
+.translations {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    background-color: #2C2C2C;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+
+.translations h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.translations p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #CCCCCC;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    video {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
